@@ -25,8 +25,7 @@ export const fetchLLMResponse = async (message: string, provider: string, modelP
   const startTime = Date.now();
   
   try {
-     //https://llm-model-playground-server-8041ff817c50.herokuapp.com
-     const response = await fetch('http://127.0.0.1:8000/v1/chat/completions', {
+     const response = await fetch('https://llm-model-playground-server-8041ff817c50.herokuapp.com/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
