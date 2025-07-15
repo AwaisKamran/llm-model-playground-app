@@ -38,11 +38,11 @@ To get a local copy up and running, follow these simple steps.
 
 1.  Clone the repo
     ```sh
-    git clone https://github.com/your_username/triple-chat-echo.git
+    git clone git@github.com:AwaisKamran/llm-model-playground-app.git
     ```
 2.  Navigate to the project directory
     ```sh
-    cd triple-chat-echo
+    cd llm-model-playground-app
     ```
 3.  Install NPM packages
     ```sh
@@ -74,13 +74,3 @@ To get a local copy up and running, follow these simple steps.
     ```sh
     npm run preview
     ```
-
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
