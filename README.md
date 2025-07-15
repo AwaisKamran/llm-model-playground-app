@@ -5,9 +5,7 @@ Triple Chat Echo is a modern, real-time chat application built with React and Vi
 ## Features
 
 *   **Modern & Responsive UI**: Built with the popular **shadcn/ui** component library and styled with **Tailwind CSS**.
-*   **Real-time Communication**: (Describe how real-time is achieved, e.g., WebSockets, polling with TanStack Query).
 *   **Client-Side Routing**: Seamless navigation powered by **React Router**.
-*   **Efficient Data Handling**: Robust client-side data fetching and caching with **TanStack Query**.
    
 ##  Tech Stack
 
@@ -19,9 +17,6 @@ This project is built with a modern, type-safe, and performant stack:
 *   **UI Components**: shadcn/ui (built on Radix UI & Tailwind CSS)
 *   **Styling**: Tailwind CSS
 *   **Routing**: React Router
-*   **Data Fetching & State**: TanStack Query
-*   **Forms**: React Hook Form & Zod
-*   **Charting**: Recharts
 *   **Icons**: Lucide React
 *   **Linting**: ESLint
 
