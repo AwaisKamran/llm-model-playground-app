@@ -24,14 +24,9 @@ interface ModelSelectorProps {
 const MODEL_OPTIONS: Record<string, ModelOption[]> = {
   openai: [
     { id: 'gpt-4.1-2025-04-14', name: 'GPT-4.1', description: 'Latest flagship model' },
-    { id: 'o3-2025-04-16', name: 'O3', description: 'Powerful reasoning model' },
-    { id: 'o4-mini-2025-04-16', name: 'O4 Mini', description: 'Fast reasoning model' },
-    { id: 'gpt-4.1-mini-2025-04-14', name: 'GPT-4.1 Mini', description: 'Smaller model with vision' },
     { id: 'gpt-4o', name: 'GPT-4o', description: 'Older powerful model' },
   ],
   anthropic: [
-    { id: 'claude-opus-4-20250514', name: 'Claude Opus 4', description: 'Most capable and intelligent' },
-    { id: 'claude-sonnet-4-20250514', name: 'Claude Sonnet 4', description: 'High-performance with reasoning' },
     { id: 'claude-3-5-haiku-20241022', name: 'Claude 3.5 Haiku', description: 'Fastest model' },
     { id: 'claude-3-7-sonnet-20250219', name: 'Claude 3.7 Sonnet', description: 'Extended thinking' },
     { id: 'claude-3-5-sonnet-20241022', name: 'Claude 3.5 Sonnet', description: 'Previous intelligent model' },
@@ -39,14 +34,12 @@ const MODEL_OPTIONS: Record<string, ModelOption[]> = {
   xai: [
     { id: 'grok-3', name: 'Grok 3', description: 'xAI\'s conversational model' },
     { id: 'grok-2', name: 'Grok 2', description: 'Latest Grok model' },
-    { id: 'grok-1.5', name: 'Grok 1.5', description: 'Enhanced reasoning' },
-    { id: 'grok-1', name: 'Grok 1', description: 'Original Grok model' },
   ],
 };
 
 export const DEFAULT_MODELS: Record<string, string> = {
   openai: 'gpt-4.1-2025-04-14',
-  anthropic: 'claude-opus-4-20250514',
+  anthropic: 'claude-3-5-sonnet-20241022',
   xai: 'grok-3',
 };
 
