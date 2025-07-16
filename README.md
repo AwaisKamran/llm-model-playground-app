@@ -1,6 +1,6 @@
-# Triple Chat Echo
+# LLM Playground App
 
-Triple Chat Echo is a modern, real-time chat application built with React and Vite. It leverages shadcn/ui for a sleek, responsive user interface and TanStack Query for efficient data fetching and state management.
+LLM Playground App is a modern, real-time chat application built with React and Vite. It leverages shadcn/ui for a sleek, responsive user interface and TanStack Query for efficient data fetching and state management.
 
 ## Features
 

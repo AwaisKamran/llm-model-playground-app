@@ -3,6 +3,8 @@ import * as React from "react"
 const MOBILE_BREAKPOINT = 768
 
 export function useIsMobile() {
+  // This hook determines if the current device is a mobile device based on the window width.
+  // It returns a boolean value indicating whether the device is mobile or not.
   const [isMobile, setIsMobile] = React.useState<boolean | undefined>(undefined)
 
   React.useEffect(() => {

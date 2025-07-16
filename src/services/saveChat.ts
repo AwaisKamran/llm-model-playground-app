@@ -1,5 +1,9 @@
 import { createAPIError } from "./apiClients";
 
+
+const PRODUCTION_SERVER_URL = import.meta.env.VITE_PRODUCTION_SERVER_URL;
+const LOCAL_SERVER_URL = import.meta.env.VITE_LOCALHOST;
+
 export interface SaveChatAPIResponse{
   status: string,
   id: string
@@ -8,7 +12,7 @@ export interface SaveChatAPIResponse{
 export const saveChat = async (state: any): Promise<SaveChatAPIResponse> => {
   try {
     const response = await fetch(
-      "https://llm-model-playground-server-8041ff817c50.herokuapp.com/v1/chat/save",
+      `${PRODUCTION_SERVER_URL}/v1/chat/save`,
       {
         method: "POST",
         headers: {

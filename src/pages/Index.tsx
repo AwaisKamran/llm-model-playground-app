@@ -147,7 +147,7 @@ const Index: React.FC = () => {
                 <a href="#" className="hover:text-gray-900 transition-colors">Support</a>
               </div>
               <div className="text-sm text-gray-500">
-                © 2024 LLM Playground. All rights reserved.
+                © 2025 That Interview With BTI. All rights reserved.
               </div>
             </div>
           </div>

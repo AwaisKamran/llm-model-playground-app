@@ -1,5 +1,8 @@
 import { ModelParameters } from "@/types";
 
+const PRODUCTION_SERVER_URL = import.meta.env.VITE_PRODUCTION_SERVER_URL;
+const LOCAL_SERVER_URL = import.meta.env.VITE_LOCALHOST;
+
 export interface APIResponse {
   response: string;
   stats: {
@@ -25,7 +28,7 @@ export const fetchLLMResponse = async (message: string, provider: string, modelP
   const startTime = Date.now();
   
   try {
-     const response = await fetch('https://llm-model-playground-server-8041ff817c50.herokuapp.com/v1/chat/completions', {
+     const response = await fetch(`${PRODUCTION_SERVER_URL}/v1/chat/completions`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -58,6 +61,6 @@ export const fetchLLMResponse = async (message: string, provider: string, modelP
     if (error instanceof Error && 'provider' in error) {
       throw error;
     }
-    throw createAPIError('OpenAI', `Network error: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    throw createAPIError('Model Provider Error', `Network error: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 };
