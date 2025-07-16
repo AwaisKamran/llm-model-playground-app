@@ -50,6 +50,12 @@ To get a local copy up and running, follow these simple steps.
 
 ## Usage
 
+*   **Add .env file for server URLs:**
+    ```sh
+    VITE_PRODUCTION_SERVER_URL= XXXXXXXX
+    VITE_LOCALHOST= XXXXXXXX
+    ```
+
 *   **Run the development server:**
     ```sh
     npm run dev
